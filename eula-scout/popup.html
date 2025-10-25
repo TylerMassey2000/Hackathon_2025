@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>EULA Scout</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>EULA Scout</h1>
+    <button id="crawlBtn">Scan this site</button>
+  </header>
+
+  <section id="status"></section>
+  <section id="results"></section>
+
+  <footer>
+    <details>
+      <summary>AI Settings (optional)</summary>
+      <div class="grid">
+        <label>Provider
+          <select id="aiProvider">
+            <option value="">Disabled</option>
+            <option value="openai">OpenAI</option>
+            <option value="gemini">Gemini</option>
+          </select>
+        </label>
+        <label>OpenAI Key
+          <input id="openaiKey" type="password" placeholder="sk-..." />
+        </label>
+        <label>Gemini Key
+          <input id="geminiKey" type="password" placeholder="AIza..." />
+        </label>
+        <button id="saveAI">Save</button>
+      </div>
+    </details>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

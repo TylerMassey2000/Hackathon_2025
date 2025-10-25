@@ -1,0 +1,68 @@
+body { font-family: system-ui, Arial, sans-serif; width: 380px; margin: 0; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px 12px; border-bottom: 1px solid #e5e5e5; }
+h1 { font-size: 16px; margin: 0; }
+
+#crawlBtn, button {
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+#status {
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #555;
+  white-space: pre-wrap;
+}
+
+section#results { padding: 6px 10px 12px; }
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px 0;
+  background: #fff;
+}
+
+.card h3 { margin: 0 0 6px; font-size: 14px; }
+.small { font-size: 12px; color: #666; margin-bottom: 8px; }
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+ol.violations { padding-left: 18px; margin: 8px 0; }
+ol.violations li { margin-bottom: 10px; }
+
+.vio-title { font-weight: 600; margin-bottom: 2px; }
+.vio-field { font-size: 12px; color: #333; margin-top: 1px; }
+.vio-field span { color: #666; font-weight: 600; }
+
+/* Severity badges */
+.sev-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+  background: #eee;
+  color: #222;
+  border: 1px solid #ccc;
+}
+
+.sev-red    { background: #ffebee;  color: #b71c1c; border-color: #ffcdd2; }
+.sev-orange { background: #fff3e0;  color: #e65100; border-color: #ffe0b2; }
+.sev-yellow { background: #fffde7;  color: #8d6e00; border-color: #fff59d; }
+.sev-green  { background: #e8f5e9;  color: #1b5e20; border-color: #c8e6c9; }
+
+/* AI settings dropdown section */
+details { padding: 8px 12px; border-top: 1px solid #eee; }
+.grid { display: grid; grid-template-columns: 1fr; gap: 6px; margin-top: 8px; }
+input, select { width: 100%; padding: 6px; border: 1px solid #ddd; border-radius: 6px; }
+pre { white-space: pre-wrap; max-height: 220px; overflow: auto; background: #fafafa; padding: 8px; border-radius: 8px; }
