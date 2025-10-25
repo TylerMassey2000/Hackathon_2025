@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library | ExULA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="nav-left">
+            <ul class="nav-links">
+                <li><a href="index.html"><img src="images/logo.png" height="50px" alt="Logo"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html" class="active">Library</a></li>
+                <li><a href="ai.html">AI Review</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Social Media</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="instagram">
+                <a href="https://help.instagram.com/termsofuse" target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram.png" alt="Instagram Icon" class="info-icon">
+                </a>
+                <h3>Instagram</h3>
+                <p class="short-desc"></p>
+
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+            <div class="info-column-top" data-company="x">
+                <a href="https://x.com/en/tos" target="_blank" rel="noopener noreferrer">
+                    <img src="images/x.png" alt="X Icon" class="info-icon">
+                </a>
+                <h3>X</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+            <div class="info-column-top" data-company="threads">
+                <a href="https://help.instagram.com/769983657850450" target="_blank" rel="noopener noreferrer">
+                    <img src="images/threads.png" alt="Threads Icon" class="info-icon">
+                </a>
+                <h3>Threads</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+            <div class="info-column-top" data-company="facebook">
+                <a href="https://www.facebook.com/terms/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.png" alt="Facebook Icon" class="info-icon">
+                </a>
+                <h3>Facebook</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+            <div class="info-column-top" data-company="tiktok">
+                <a href="https://www.tiktok.com/legal/page/us/terms-of-service/en" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/tiktok.png" alt="TikTok Icon" class="info-icon">
+                </a>
+                <h3>TikTok</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="instagram">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="x">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="threads">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="facebook">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="tiktok">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Live Streaming</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="twitch">
+                <a href="https://legal.twitch.com/en/legal/terms-of-service/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/twitch.png" alt="Twitch Icon" class="info-icon">
+                </a>
+                <h3>Twitch</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="youtube">
+                <a href="https://www.youtube.com/static?template=terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/youtube.png" alt="YouTube Icon" class="info-icon">
+                </a>
+                <h3>Youtube</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="kick">
+                <a href="https://kick.com/terms-of-service" target="_blank" rel="noopener noreferrer">
+                    <img src="https://kick.com/img/kick-logo.svg" alt="Kick Icon" class="info-icon">
+                </a>
+                <h3>Kick</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="rumble">
+                <a href="https://rumble.com/s/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/rumble.png" alt="Rumble Icon" class="info-icon">
+                </a>
+                <h3>Rumble</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="vimeo">
+                <a href="https://vimeo.com/legal" target="_blank" rel="noopener noreferrer">
+                    <img src="images/vimeo.png" alt="Vimeo Icon" class="info-icon">
+                </a>
+                <h3>Vimeo</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="twitch">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="youtube">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="kick">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="rumble">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="vimeo">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Media Streaming</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="prime">
+                <a href="https://www.primevideo.com/help?nodeId=202095490" target="_blank" rel="noopener noreferrer">
+                    <img src="images/prime.png" alt="Prime Video Icon" class="info-icon">
+                </a>
+                <h3>Prime Video</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="netflix">
+                <a href="https://help.netflix.com/legal/termsofuse?locale=en-US" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/netflix.png" alt="Netflix Icon" class="info-icon">
+                </a>
+                <h3>Netflix</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="hulu">
+                <a href="https://www.hulu.com/subscriber_agreement" target="_blank" rel="noopener noreferrer">
+                    <img src="images/hulu.png" alt="Hulu Icon" class="info-icon">
+                </a>
+                <h3>Hulu</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="disney">
+                <a href="https://www.disneyplus.com/legal/subscriber-agreement" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/disney.png" alt="Disney+ Icon" class="info-icon">
+                </a>
+                <h3>Disney+</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="peacock">
+                <a href="https://www.peacocktv.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/peacock.png" alt="Peacock Icon" class="info-icon">
+                </a>
+                <h3>Peacock</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="prime">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="prime">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="hulu">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="disney">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="peacock">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Home & Monitoring Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Smart Home & Monitoring</h2>
+        </div>
+
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="irobot">
+                <a href="https://about.irobot.com/legal/terms-of-service" target="_blank" rel="noopener noreferrer">
+                    <img src="https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/241703641_10158862862443924_2759317796477207910_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=LeGVTHOeUtoQ7kNvwEJk9tp&_nc_oc=Adl2Ia_b_czIIvDpk3koW_AUW-V3vJHw230FWrbIxdcCuL3MNAVbw8ZFne4JnW-tZQI&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&_nc_gid=--TQvWh2nKBXi48IAtQ0jg&oh=00_AfcKesaAH5MarTSW4Ul7EYaCeU6io_gs4Bwf_EcksRENCA&oe=690244A8"
+                        alt="Roomba / iRobot Icon" class="info-icon">
+                </a>
+                <h3>Roomba</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="ring">
+                <a href="https://ring.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/ring.png" alt="Ring Icon" class="info-icon">
+                </a>
+                <h3>Ring</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="nest">
+                <a href="https://support.google.com/product-documentation/answer/9327735?hl=en" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/nest.png" alt="Google Nest Icon" class="info-icon">
+                </a>
+                <h3>Google Nest</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="alexa">
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=201809740" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/alexa.png" alt="Amazon Alexa Icon" class="info-icon">
+                </a>
+                <h3>Amazon Alexa</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="nanit">
+                <a href="https://www.nanit.com/pages/terms-of-service" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.nanit.com/cdn/shop/files/NANIT-CORE-LOGOTYPE-BLUE_1_1.png?v=1680123346&width=220"
+                        alt="Nanit Icon" class="info-icon">
+                </a>
+                <h3>Nanit</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="irobot">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="ring">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="nest">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="alexa">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="nanit">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Car companies</h2>
+        </div>
+
+        <!-- Car Companies -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="tesla">
+                <a href="https://www.tesla.com/legal/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/tesla.png " alt="Tesla Icon" class="info-icon">
+                </a>
+                <h3>Tesla</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="ford">
+                <a href="https://www.ford.com/help/terms/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/ford.png" alt="Ford Icon" class="info-icon">
+                </a>
+                <h3>Ford</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="toyota">
+                <a href="https://www.toyota.com/support/legal-terms/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/toyota.png" alt="Toyota Icon" class="info-icon">
+                </a>
+                <h3>Toyota</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="gmc">
+                <a href="https://www.gm.com/user-guidelines" target="_blank" rel="noopener noreferrer">
+                    <img src="images/gmc.png" alt="GM Icon" class="info-icon">
+                </a>
+                <h3>GMC</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="honda">
+                <a href="https://www.honda.com/privacy/terms-and-conditions" target="_blank" rel="noopener noreferrer">
+                    <img src="images/honda.png" alt="Honda Icon" class="info-icon">
+                </a>
+                <h3>Honda</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="tesla">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="ford">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="toyota">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="gmc">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="honda">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Eccommerce</h2>
+        </div>
+
+        <!-- Ecommerce -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="ebay">
+                <a href="https://www.ebay.com/help/policies/member-behaviour-policies/user-agreement?id=4259"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/ebay.png" alt="eBay Icon" class="info-icon">
+                </a>
+                <h3>eBay</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="paypal">
+                <a href="https://www.paypal.com/us/legalhub/paypal/useragreement-full" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/paypal.png" alt="PayPal Icon" class="info-icon">
+                </a>
+                <h3>PayPal</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="shopify">
+                <a href="https://www.shopify.com/legal/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/shopify.png" alt="Shopify Icon" class="info-icon">
+                </a>
+                <h3>Shopify</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="depop">
+                <a href="https://www.depop.com/help/terms-of-service/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/depop.png" alt="Depop Icon" class="info-icon">
+                </a>
+                <h3>Depop</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="amazon">
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=GLSBYFE9MGKKQXXM" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/amazon.png" alt="Amazon Icon" class="info-icon">
+                </a>
+                <h3>Amazon</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="ebay">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="paypal">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="shopify">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="depop">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="amazon">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Messaging</h2>
+        </div>
+
+        <!-- Messaging -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="snapchat">
+                <a href="https://www.snap.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/snapchat.png" alt="Snapchat Icon" class="info-icon">
+                </a>
+                <h3>Snapchat</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="kik">
+                <a href="https://kik.com/terms-of-service/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/kik.png" alt="Kik Icon" class="info-icon">
+                </a>
+                <h3>Kik</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="messenger">
+                <a href="https://www.facebook.com/terms/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/messenger.png" alt="Messenger Icon" class="info-icon">
+                </a>
+                <h3>Messenger</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="whatsapp">
+                <a href="https://www.whatsapp.com/legal/terms-of-service?lang=en" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/whatsapp.png" alt="WhatsApp Icon" class="info-icon">
+                </a>
+                <h3>WhatsApp</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="groupme">
+                <a href="https://groupme.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="https://play-lh.googleusercontent.com/3v5rY1LyfDpINaf1MIQXOE1cwt37Xnwf1h82UQsqsW8RyF6qaJmgOHxjQ3BGU3MS7A=w240-h480-rw" alt="GroupMe Icon" class="info-icon">
+                </a>
+                <h3>GroupMe</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="snapchat">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="kik">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="messenger">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="whatsapp">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="groupme">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Design</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="canva">
+                <a href="https://www.canva.com/policies/terms-of-use/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/canva.png" alt="Canva Icon" class="info-icon">
+                </a>
+                <h3>Canva</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="adobe">
+                <a href="https://www.adobe.com/legal/terms.html" target="_blank" rel="noopener noreferrer">
+                    <img src="images/adobe.png" alt="Adobe Icon" class="info-icon">
+                </a>
+                <h3>Adobe</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="figma">
+                <a href="https://www.figma.com/legal/tos/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/figma.png" alt="Figma Icon" class="info-icon">
+                </a>
+                <h3>Figma</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="sketch">
+                <a href="https://www.sketch.com/tos/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/sketch.png" alt="Sketch Icon" class="info-icon">
+                </a>
+                <h3>Sketch</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="corel">
+                <a href="https://www.corel.com/en/terms-of-service/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.corel.com/static/corel/images/corel-wordmark-color-on-light.svg" alt="Corel Icon" class="info-icon">
+                </a>
+                <h3>Corel</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="canva">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="adobe">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="figma">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="sketch">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="corel">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Dating apps</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="mutual">
+                <a href="https://mutual.app/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.pagecloud.com/mTFCgRTLfkcsRsasD7tiCcXugQA=/416x0/filters:no_upscale()/mutual/images/Logo-2.png" alt="Mutual Icon" class="info-icon">
+                </a>
+                <h3>Mutual</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="tinder">
+                <a href="https://policies.tinder.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/tinder.png" alt="Tinder Icon" class="info-icon">
+                </a>
+                <h3>Tinder</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="grinder">
+                <a href="https://www.grindr.com/terms-of-service/en-us" target="_blank" rel="noopener noreferrer">
+                    <img src="images/grindr.png" alt="Grindr Icon" class="info-icon">
+                </a>
+                <h3>Grindr</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="bumble">
+                <a href="https://bumble.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/bumble.png" alt="Bumble Icon" class="info-icon">
+                </a>
+                <h3>Bumble</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="hinge">
+                <a href="https://hinge.co/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/hinge.png" alt="Hinge Icon" class="info-icon">
+                </a>
+                <h3>Hinge</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="mutual">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="tinder">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="grinder">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="bumble">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="hinge">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Insurance</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="progressive">
+                <a href="https://www.progressive.com/copyright/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://images.contentstack.io/v3/assets/blt62d40591b3650da3/blt483e097d64d66a25/66476d224ac76ee67740f2d5/logo-progressive.svg" alt="Progressive Icon" class="info-icon">
+                </a>
+                <h3>Progressive</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="allstate">
+                <a href="https://www.allstate.com/privacy-center/online/terms-of-use" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://www.allstate.com/dist/content-client-react-app/static/media/logo-large.dd47a938943f3af25de5f6885d2c39d8.svg" alt="Allstate Icon" class="info-icon">
+                </a>
+                <h3>Allstate</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="farmers">
+                <a href="https://www.farmers.com/terms-of-use/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.farmers.com/siteassets/002-duplicate-folders/farmers-a/marketing/digital/aem/images/misc/logo/farmers-ins-logo-2022-v1.png?width=1024&rmode=min&rsampler=bicubic" alt="Farmers Icon" class="info-icon">
+                </a>
+                <h3>Farmers</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="statefarm">
+                <a href="https://www.statefarm.com/customer-care/disclosures/terms-of-use" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="https://static1.st8fm.com/en_US/dxl-1x/prod/css/images/header/state-farm-logo-4.svg" alt="State Farm Icon" class="info-icon">
+                </a>
+                <h3>State Farm</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="geico">
+                <a href="https://media.geico.com/legal/terms_of_use.htm" target="_blank" rel="noopener noreferrer">
+                    <img src="images/geico.png" alt="GEICO Icon" class="info-icon">
+                </a>
+                <h3>GEICO</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="progressive">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="allstate">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="farmers">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="statefarm">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="geico">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Browsers</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="opera">
+                <a href="https://legal.opera.com/terms/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/opera.png" alt="Opera Icon" class="info-icon">
+                </a>
+                <h3>Opera</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="chrome">
+                <a href="https://www.google.com/chrome/terms/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/chrome.png" alt="Chrome Icon" class="info-icon">
+                </a>
+                <h3>Chrome</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="Firefox">
+                <a href="https://www.mozilla.org/en/about/legal/eula/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://www.firefox.com/media/img/logos/firefox/logo-word-hor.f3b18871b657.svg" alt="Firefox Icon" class="info-icon">
+                </a>
+                <h3>Firefox</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="Edge">
+                <a href="https://www.microsoft.com/en-us/servicesagreement" target="_blank" rel="noopener noreferrer">
+                    <img src="images/edge.png" alt="Edge Icon" class="info-icon">
+                </a>
+                <h3>Edge</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="safefari">
+                <a href="https://www.apple.com/legal/sla/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/safari.png" alt="Safari Icon" class="info-icon">
+                </a>
+                <h3>Safari</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="opera">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="chrome">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="Firefox">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="Edge">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="safefari">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>VPNs</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="surfshark">
+                <a href="https://surfshark.com/terms-of-service" target="_blank" rel="noopener noreferrer">
+                    <img src="images/surfshark.png" alt="Surfshark Icon" class="info-icon">
+                </a>
+                <h3>Surfshark</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="nordvpn">
+                <a href="https://my.nordaccount.com/legal/terms-of-service/" target="_blank" rel="noopener noreferrer">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAALVBMVEVHcEw+X/8+X/8+X/8/YP8+X/8+X/8+X/8/YP8+X/8+YP8+X/8+X/8+X/8+X/8dNFR6AAAADnRSTlMAq2bMEjrh9xl+S5WUtEjZYikAAACbSURBVCiR1ZHLFsMgCEQVNeAj/P/nNqWIxGbZTWel3HOYAUL4gQhGjB3yAyqJVant7GSneEP54JsO33tjF10s7oz5nKxZCdGeRaHl5FrtmTSNd1ruJBDs394WszMI7DocSKcEOvJwWZGCzF6A0G3iA+tVF5sWqoPDhXM76StQ8bCsQPS1anGiuQTcjpjRfIq2cAK2o9adPZb+Wi+DaAywohcGVwAAAABJRU5ErkJggg==" alt="NordVPN Icon" class="info-icon">
+                </a>
+                <h3>NordVPN</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="expressvpn">
+                <a href="https://www.expressvpn.com/tos" target="_blank" rel="noopener noreferrer">
+                    <img src="images/expressvpn.png" alt="ExpressVPN Icon" class="info-icon">
+                </a>
+                <h3>ExpressVPN</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="protonvpn">
+                <a href="https://proton.me/legal/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/protonvpn.png" alt="Proton VPN Icon" class="info-icon">
+                </a>
+                <h3>Proton VPN</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="cyberghostvpn">
+                <a href="https://www.cyberghostvpn.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/cyberghost.png" alt="CyberGhost Icon" class="info-icon">
+                </a>
+                <h3>CyberGhost</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="surfshark">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="nordvpn">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="expressvpn">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="protonvpn">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="cyberghostvpn">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Gaming publishers</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="Gearbox">
+                <a href="https://www.gearboxsoftware.com/terms-of-service/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/gearbox.png" alt="Gearbox Icon" class="info-icon">
+                </a>
+                <h3>Gearbox</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="blizzard">
+                <a href="https://www.blizzard.com/tou" target="_blank" rel="noopener noreferrer">
+                    <img src="images/blizzard.png" alt="Blizzard Icon" class="info-icon">
+                </a>
+                <h3>Blizzard</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="bungie">
+                <a href="https://www.bungie.net/7/en/legal/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/bungie.png" alt="Bungie Icon" class="info-icon">
+                </a>
+                <h3>Bungie</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="ea">
+                <a href="https://www.ea.com/legal/user-agreement" target="_blank" rel="noopener noreferrer">
+                    <img src="images/EA.png" alt="EA Icon" class="info-icon">
+                </a>
+                <h3>EA</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="steam">
+                <a href="https://store.steampowered.com/subscriber_agreement/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/steam.png" alt="steam Icon" class="info-icon">
+                </a>
+                <h3>Steam</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="Gearbox">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="blizzard">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="bungie">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="ea">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="steam">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- Dropdown Section -->
+    <div class="info-block">
+        <div class="info-header">
+            <h2>Operating Systems</h2>
+        </div>
+
+        <!-- Column Tops always visible -->
+        <div class="column-top-row">
+            <div class="info-column-top" data-company="ios">
+                <a href="https://www.apple.com/legal/sla/docs/iOS26_iPadOS26.pdf" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/ios.png" alt="iOS Icon" class="info-icon">
+                </a>
+                <h3>iOS</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="windows">
+                <a href="https://www.microsoft.com/content/dam/microsoft/usetm/documents/windows/11/oem-%28pre-installed%29/UseTerms_OEM_Windows_11_English.pdf"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/windows.png" alt="Windows Icon" class="info-icon">
+                </a>
+                <h3>Windows</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="android">
+                <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">
+                    <img src="images/android.png" alt="Android Icon" class="info-icon">
+                </a>
+                <h3>Android</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="xbox">
+                <a href="https://support.xbox.com/en-US/help/hardware-network/warranty-service/xbox-software-license-agreement" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="images/xbox.png" alt="xbox Icon" class="info-icon">
+                </a>
+                <h3>Xbox</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+
+            <div class="info-column-top" data-company="playstation">
+                <a href="https://www.playstation.com/en-us/legal/ps5-ssla/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/playstation.png" alt="PlayStation Icon" class="info-icon">
+                </a>
+                <h3>PlayStation</h3>
+                <p class="score"></p>
+                <p class="risk"></p>
+                
+            </div>
+        </div>
+
+        <!-- Hidden content that drops down -->
+        <div class="info-content">
+            <div class="info-column"data-company="ios">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="windows">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="android">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="samsung">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+            <div class="info-column"data-company="playstation">
+                <ul>
+                    <li>Detail one</li>
+                    <li>Detail two</li>
+                    <li>Detail three</li>
+                    <li>Detail four</li>
+                    <li>Detail five</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Exposed ULA.</p>
+        <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a> or companies' websites.</p>
+        </p>
+    </footer>
+</body>

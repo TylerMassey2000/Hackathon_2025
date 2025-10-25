@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Review | Exposed ULA</title>
+
+
+    <!-- global styles for navbar/footer/etc -->
+    <link rel="stylesheet" href="styles.css" />
+
+
+    <!-- page-specific styles JUST for AI review -->
+    <link rel="stylesheet" href="ai.css" />
+
+
+    <!-- page-specific script (do NOT include script.js here) -->
+    <script src="ai.js" defer></script>
+</head>
+
+
+<body>
+    <!-- Reuse your existing navbar styles/classes -->
+    <header class="navbar">
+        <div class="nav-left">
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">
+                        <img src="images/logo.png" height="32" alt="Logo">
+                    </a>
+                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a class="active" href="ai.html">AI Review</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- Page shell (gives us centered cards + gray bg without touching global body styles) -->
+    <main class="ai-shell">
+        <div class="ai-wrapper">
+
+
+            <!-- LEFT: form card -->
+            <section class="ai-card ai-card--form">
+                <h1 class="ai-card-title">AI Policy Scan</h1>
+                <p class="ai-card-subtitle">
+                    We analyze a company's Terms / EULA / Privacy Policy and flag sneaky stuff like
+                    forced arbitration, always-on listening, data selling, and
+                    “we can change this whenever we want.”
+                </p>
+
+
+                <form id="scanForm" class="ai-form">
+                    <!-- Company Name -->
+                    <div class="ai-form-block">
+                        <label for="company" class="ai-label">
+                            Company / Product Name
+                        </label>
+                        <input
+                            id="company"
+                            name="company"
+                            class="ai-input"
+                            placeholder="Instagram, Ring, GMC Infotainment..."
+                            required
+                        />
+                        <small class="ai-hint">
+                            Used in the report header.
+                        </small>
+                    </div>
+
+
+                    <!-- Policy URL -->
+                    <div class="ai-form-block">
+                        <label for="policyUrl" class="ai-label ai-label-row">
+                            <span>Policy URL</span>
+                            <span class="ai-label-hint">(optional)</span>
+                        </label>
+                        <input
+                            id="policyUrl"
+                            name="policyUrl"
+                            class="ai-input"
+                            placeholder="https://company.com/terms-of-service"
+                        />
+                        <small class="ai-hint">
+                            Terms of Service / EULA / Privacy Policy link. We’ll try to pull and scan it.
+                        </small>
+                    </div>
+
+
+                    <!-- Raw pasted policy text -->
+                    <div class="ai-form-block">
+                        <label for="policyText" class="ai-label ai-label-row">
+                            <span>Paste Policy Text</span>
+                            <span class="ai-label-hint">(optional)</span>
+                        </label>
+                        <textarea
+                            id="policyText"
+                            name="policyText"
+                            class="ai-textarea"
+                            placeholder="Paste the full Terms / EULA text here..."
+                        ></textarea>
+                        <small class="ai-hint">
+                            If you paste text here, we use this instead of fetching the URL.
+                        </small>
+                    </div>
+
+
+                    <!-- Error message -->
+                    <div id="errorBox" class="ai-error hidden"></div>
+
+
+                    <!-- Submit button -->
+                    <button id="runScanBtn" class="ai-button" type="submit">
+                        <span class="ai-button-icon">🛡</span>
+                        <span class="ai-button-text">Run Scan</span>
+                        <span id="loadingSpinner" class="ai-spinner hidden"></span>
+                    </button>
+
+
+                    <p class="ai-disclaimer">
+                        We are not lawyers. This is an awareness tool, not legal advice.
+                    </p>
+                </form>
+
+
+                <div class="ai-flag-box">
+                    <h2 class="ai-flag-title">What we flag</h2>
+                    <ul class="ai-flag-list">
+                        <li>Always-on mic / “voice data” collection</li>
+                        <li>Tracking across apps, car, home, phone</li>
+                        <li>Selling or “sharing” your data with “partners”</li>
+                        <li>Forced arbitration / waiving your right to sue</li>
+                        <li>“We can change this policy at any time without telling you”</li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!-- RIGHT: results card -->
+            <section class="ai-card ai-card--results">
+                <div class="ai-results-header">
+                    <div>
+                        <h2 class="ai-results-title">Scan Result</h2>
+                        <p id="resultsCompany" class="ai-results-company ai-muted">
+                            Run a scan to see the report.
+                        </p>
+                    </div>
+                    <div id="resultsSeverity" class="ai-severity-badge hidden"></div>
+                </div>
+
+
+                <!-- Sneakiness score -->
+                <div class="ai-score-block">
+                    <div class="ai-score-row">
+                        <span class="ai-score-label">Overall Sneakiness Score</span>
+                        <span id="scoreNumber" class="ai-score-number">–</span>
+                    </div>
+                    <div class="ai-score-bar">
+                        <div id="scoreFill" class="ai-score-fill" style="width:0%"></div>
+                    </div>
+                </div>
+
+
+                <!-- Summary -->
+                <div class="ai-summary-block">
+                    <p id="summaryText" class="ai-summary-text ai-muted">
+                        No data yet. Submit a policy to analyze.
+                    </p>
+                </div>
+
+
+                <!-- Findings -->
+                <div class="ai-findings-block">
+                    <h3 class="ai-findings-title">Biggest Red Flags</h3>
+                    <div id="findingsList" class="ai-findings-list ai-muted ai-small">
+                        No findings yet.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Exposed ULA</p>
+    </footer>
+</body>
+</html>
