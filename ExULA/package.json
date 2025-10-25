@@ -1,0 +1,14 @@
+{
+  "name": "functions",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^4.4.1",
+    "cors": "^2.8.5"
+  }
+}
+
