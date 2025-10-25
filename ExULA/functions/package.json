@@ -1,0 +1,15 @@
+{
+  "name": "functions",
+  "type": "module",
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@google/generative-ai": "^0.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^11.11.1",
+    "firebase-functions": "^5.1.1"
+  }
+}
